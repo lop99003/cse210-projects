@@ -8,9 +8,14 @@ class Program
         PromptGenerator promptGen = new PromptGenerator();
         string userChoice = "";
 
+        Console.BackgroundColor = ConsoleColor.Magenta; //I LOVE purple!
+        Console.Clear(); //I'm seeing purple.
+
         // Menu to chose from loop
         while (userChoice != "5")
         {
+            Console.Clear(); //Clear the console for a clen display
+            Console.ForegroundColor = ConsoleColor.Cyan; // Set text color for menu
             Console.WriteLine("Please select one of the following options:");
             Console.WriteLine("1. Write a new entry");
             Console.WriteLine("2. Display the journal");

@@ -18,8 +18,10 @@ public class Entry
     //Method to display the entry
     public void Display()
     {
+        Console.ForegroundColor = ConsoleColor.Yellow; //How about some COLOR here!
         Console.WriteLine($"Date: {_date}");
         Console.WriteLine($"Prompt: {_promptText}");
         Console.WriteLine($"Response: {_entryText}\n");
+        Console.ResetColor(); //Let's go back to general set color.
     }
 }
